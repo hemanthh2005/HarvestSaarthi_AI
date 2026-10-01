@@ -1,0 +1,47 @@
+# HARVESTSAARTHI AI - AGENT MANIFEST
+# Submission Prototype for BHARAT AGENTIC 2026 Powered by aiKart
+# Note: Manifest structure is isolated for aiKart compatibility.
+
+agent:
+  name: harvestsaarthi-ai
+  version: 1.0.0
+  tagline: "From Harvest Uncertainty to the Right Next Move."
+  domain: AgriTech & Rural Bharat
+  description: "An evidence-driven AI decision agent that helps small farmers make better post-harvest sell, store, transport, and timing decisions by combining harvest information with market, logistics, weather, storage, and perishability data."
+
+runtime:
+  type: container
+  port: 8000
+  health_check: /api/health
+  entrypoint: uvicorn backend.main:app --host 0.0.0.0 --port 8000
+
+capabilities:
+  - situation_understanding
+  - market_price_intelligence
+  - logistics_cost_routing
+  - crop_perishability_decay_modeling
+  - weather_risk_assessment
+  - deterministic_net_realization_decision
+  - interactive_what_if_simulation
+  - action_planning_negotiation_assistant
+
+tools:
+  - name: market_price_tool
+    description: "Fetches mandi market prices across nearby APMC markets"
+  - name: route_distance_tool
+    description: "Calculates transit distance and vehicle logistics transport costs"
+  - name: weather_risk_tool
+    description: "Evaluates rainfall and temperature transit delay risks"
+  - name: perishability_tool
+    description: "Calculates crop decay percentage based on storage type and duration"
+  - name: storage_tool
+    description: "Queries warehouse and cold storage availability and daily rates"
+  - name: transport_tool
+    description: "Assesses truck availability and logistics capacity"
+
+execution_modes:
+  default: FALLBACK_MODE
+  supported:
+    - AI_MODE
+    - FALLBACK_MODE
+  data_mode: DEMO

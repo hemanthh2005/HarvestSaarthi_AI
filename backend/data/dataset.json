@@ -1,0 +1,210 @@
+{
+  "metadata": {
+    "dataset_name": "HarvestSaarthi Prototype Dataset",
+    "version": "1.0.0",
+    "description": "Deterministic benchmark agricultural dataset for South India / Karnataka mandis",
+    "last_updated": "2026-10-01",
+    "data_mode": "DEMO"
+  },
+  "crops": [
+    "Tomato",
+    "Onion",
+    "Banana",
+    "Potato",
+    "Green Chili",
+    "Paddy",
+    "Maize",
+    "Mango"
+  ],
+  "markets": [
+    {
+      "market_name": "Hassan APMC Mandi",
+      "district": "Hassan",
+      "distance_from_hassan_km": 8.0,
+      "distance_from_kolar_km": 210.0,
+      "distance_from_bangalore_km": 180.0,
+      "prices": {
+        "Tomato": 26.50,
+        "Onion": 22.00,
+        "Banana": 20.00,
+        "Potato": 17.50,
+        "Green Chili": 42.00,
+        "Paddy": 22.50,
+        "Maize": 20.00,
+        "Mango": 55.00
+      },
+      "market_capacity_kg": 50000,
+      "price_trend": "STABLE"
+    },
+    {
+      "market_name": "Bangalore Yeshwanthpur APMC",
+      "district": "Bangalore Urban",
+      "distance_from_hassan_km": 180.0,
+      "distance_from_kolar_km": 65.0,
+      "distance_from_bangalore_km": 12.0,
+      "prices": {
+        "Tomato": 34.00,
+        "Onion": 28.50,
+        "Banana": 26.00,
+        "Potato": 22.00,
+        "Green Chili": 52.00,
+        "Paddy": 25.00,
+        "Maize": 23.50,
+        "Mango": 72.00
+      },
+      "market_capacity_kg": 250000,
+      "price_trend": "RISING"
+    },
+    {
+      "market_name": "Kolar APMC Mandi",
+      "district": "Kolar",
+      "distance_from_hassan_km": 210.0,
+      "distance_from_kolar_km": 6.0,
+      "distance_from_bangalore_km": 68.0,
+      "prices": {
+        "Tomato": 31.00,
+        "Onion": 24.00,
+        "Banana": 21.50,
+        "Potato": 19.00,
+        "Green Chili": 48.00,
+        "Paddy": 23.00,
+        "Maize": 21.00,
+        "Mango": 62.00
+      },
+      "market_capacity_kg": 120000,
+      "price_trend": "STABLE"
+    },
+    {
+      "market_name": "Mysuru Bandipalya Mandi",
+      "district": "Mysuru",
+      "distance_from_hassan_km": 115.0,
+      "distance_from_kolar_km": 215.0,
+      "distance_from_bangalore_km": 145.0,
+      "prices": {
+        "Tomato": 29.00,
+        "Onion": 25.00,
+        "Banana": 24.50,
+        "Potato": 20.00,
+        "Green Chili": 46.00,
+        "Paddy": 24.00,
+        "Maize": 22.00,
+        "Mango": 68.00
+      },
+      "market_capacity_kg": 90000,
+      "price_trend": "FALLING"
+    },
+    {
+      "market_name": "Hubballi APMC Mandi",
+      "district": "Dharwad",
+      "distance_from_hassan_km": 310.0,
+      "distance_from_kolar_km": 440.0,
+      "distance_from_bangalore_km": 410.0,
+      "prices": {
+        "Tomato": 32.50,
+        "Onion": 31.00,
+        "Banana": 23.00,
+        "Potato": 24.00,
+        "Green Chili": 50.00,
+        "Paddy": 24.50,
+        "Maize": 22.50,
+        "Mango": 60.00
+      },
+      "market_capacity_kg": 150000,
+      "price_trend": "RISING"
+    },
+    {
+      "market_name": "Chintamani APMC",
+      "district": "Chikkaballapur",
+      "distance_from_hassan_km": 225.0,
+      "distance_from_kolar_km": 40.0,
+      "distance_from_bangalore_km": 80.0,
+      "prices": {
+        "Tomato": 30.00,
+        "Onion": 23.50,
+        "Banana": 22.00,
+        "Potato": 18.50,
+        "Green Chili": 47.00,
+        "Paddy": 23.00,
+        "Maize": 21.00,
+        "Mango": 65.00
+      },
+      "market_capacity_kg": 70000,
+      "price_trend": "STABLE"
+    }
+  ],
+  "transport_rates": {
+    "small_truck_cost_per_km_per_ton": 12.0,
+    "large_truck_cost_per_km_per_ton": 8.5,
+    "base_loading_unloading_fee": 500.0
+  },
+  "storage_facilities": [
+    {
+      "location": "Hassan",
+      "facility_name": "Hassan District Cold Chain & Warehousing",
+      "cold_storage_available": false,
+      "ambient_warehouse_available": true,
+      "cold_storage_cost_per_kg_day": 0.60,
+      "ambient_storage_cost_per_kg_day": 0.15,
+      "capacity_kg": 20000
+    },
+    {
+      "location": "Kolar",
+      "facility_name": "Kolar Agri Logistics & Cold Storage Ltd",
+      "cold_storage_available": true,
+      "ambient_warehouse_available": true,
+      "cold_storage_cost_per_kg_day": 0.45,
+      "ambient_storage_cost_per_kg_day": 0.12,
+      "capacity_kg": 100000
+    },
+    {
+      "location": "Bangalore",
+      "facility_name": "Bangalore Integrated Cold Logistics Park",
+      "cold_storage_available": true,
+      "ambient_warehouse_available": true,
+      "cold_storage_cost_per_kg_day": 0.50,
+      "ambient_storage_cost_per_kg_day": 0.15,
+      "capacity_kg": 300000
+    },
+    {
+      "location": "Mysuru",
+      "facility_name": "Mysuru Agro Warehousing Hub",
+      "cold_storage_available": true,
+      "ambient_warehouse_available": true,
+      "cold_storage_cost_per_kg_day": 0.55,
+      "ambient_storage_cost_per_kg_day": 0.14,
+      "capacity_kg": 80000
+    }
+  ],
+  "weather_risks": {
+    "Hassan": {
+      "rain_risk_percent": 15.0,
+      "temperature_celsius": 26.0,
+      "risk_level": "LOW",
+      "delay_risk_score": 1.5
+    },
+    "Kolar": {
+      "rain_risk_percent": 35.0,
+      "temperature_celsius": 29.0,
+      "risk_level": "MEDIUM",
+      "delay_risk_score": 4.0
+    },
+    "Bangalore": {
+      "rain_risk_percent": 20.0,
+      "temperature_celsius": 25.0,
+      "risk_level": "LOW",
+      "delay_risk_score": 2.0
+    },
+    "Mysuru": {
+      "rain_risk_percent": 65.0,
+      "temperature_celsius": 27.0,
+      "risk_level": "HIGH",
+      "delay_risk_score": 7.5
+    },
+    "Hubballi": {
+      "rain_risk_percent": 10.0,
+      "temperature_celsius": 32.0,
+      "risk_level": "LOW",
+      "delay_risk_score": 1.0
+    }
+  }
+}

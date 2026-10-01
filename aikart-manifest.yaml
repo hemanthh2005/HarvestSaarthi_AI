@@ -8,7 +8,7 @@ metadata:
 
 runtime:
   type: docker
-  image: hemanthh2005/harvestsaarthi-ai:latest
+  image: hemanthkumar312005/harvestsaarthi-ai:latest
   command: python -m backend.aikart_runner
 
 resources:
